@@ -5,7 +5,7 @@ import argparse
 
 prefix = str("#DEL") #change this to anything you want so when u type it in the channel it'll delete, or specify it as an argument with --prefix
 token = str("")
-hearbeat = int(86400)
+heartbeat = int(86400)
 serverpurge =str("#PS") #change this to anything you want so when u type it in the channel it'll delete, or specify it as an argument with --serverpurge
 
 class MyClient(discord.Client):
@@ -46,10 +46,10 @@ if args.serverpurge is not None:
     serverpurge = args.serverpurge
     if args.token is not None:
         token = args.token
-        if args.prefix is not None:
-            prefix = args.prefix
-        if args.heartbeat is not None:
-            heartbeat = args.heartbeat
+    if args.prefix is not None:
+        prefix = args.prefix
+    if args.heartbeat is not None:
+        heartbeat = args.heartbeat
     else:
         token = input("Please input a Token: ")
         prefix = input("Please input a prefix (leave blank for the default '#DEL'): ")
@@ -81,5 +81,5 @@ else:
         serverpurge = "#PS"
 
 
-client=MyClient(heartbeat_timeout=hearbeat, guild_subscriptions=False)
+client=MyClient(heartbeat_timeout=heartbeat, guild_subscriptions=False)
 client.run(token, bot=False)
