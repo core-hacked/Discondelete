@@ -135,7 +135,7 @@ Contributions are what make the open source community such an amazing place to b
 <!-- LICENSE -->
 ## License
 
-The original project was unlicensed, this fork is distributed under the MIT License. See `LICENSE` for more information.
+This repository is distributed under the MIT License. See `LICENSE` for more information.
 
 
 
