@@ -68,7 +68,6 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-You can deploy the server however you want, this is just an example of how you can do it.
 * Python
   ```sh
   sudo apt install python3
