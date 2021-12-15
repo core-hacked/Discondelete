@@ -17,7 +17,7 @@
   <h3 align="center">Discondelete</h3>
 
   <p align="center">
-    Discondelete, is a fork of <a href="https://github.com/peeone/Discord-purge-dm-one-channel">peeone's Discord purge dm one channel</a> revamped a little to make usage easier.
+    Discondelete, is a Discord self-bot to delete dm's or purge all messages from a guild.
     <br />
     <a href="https://github.com/core-hacked/Discondelete/issues">Report Bug</a>
     ·
