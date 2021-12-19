@@ -68,10 +68,8 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-* Anaconda (Recommended not needed)
-```
-https://www.anaconda.com/
-```
+* Anaconda (Recommended not needed)<br/>
+  https://www.anaconda.com/
 
 * Python
   ```sh
