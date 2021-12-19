@@ -46,25 +46,19 @@ prefix = args.prefix
 serverpurge = args.serverpurge
 heartbeat = args.heartbeat
 
-if token is not None:
+if token != "":
     token = args.token
 else:
     token = input("Please input a Token: ")
     prefix = input("Please input a prefix (leave blank for the default '#DEL'): ")
     heartbeat = input("Please input a heartbeat timeout (leave blank for the default 86400): ")
     serverpurge = input("Please input a server purge prefix (leave blank for the default '#PS'): ")
-    if prefix is None:
-        prefix="#DEL"
-    if heartbeat is None:
-        heartbeat = 86400
-    if serverpurge is None:
-        serverpurge = "#PS"
 
-if prefix is None:
+if prefix == "":
     prefix = "#DEL"
-if serverpurge is None:
+if serverpurge == "":
     serverpurge = "#PS"
-if heartbeat is None:
+if heartbeat == "":
     heartbeat = 86400
 
 
