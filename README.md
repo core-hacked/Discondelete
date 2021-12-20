@@ -107,6 +107,7 @@ To get a local copy up and running follow these simple steps.
   # -p or --prefix [prefix] | Specify a prefix (for double word prefix' or ones with special char's use quotes)
   # -b or --heartbeat [int] | Specify the heartbeat timeout 
   # -s or --serverpurge [prefix] | Specify a prefix for a server purge or leave blank for default
+  # (W.I.P) -n or --nooutput [bool (True/False)] | Specify if you want console output of each deleted message (true by default)
   # -h or --help | to view this in the terminal/console
   ```
   Then in discord type your prefix or the default ``#DEL`` or ``#PS`` to purge messages from an entire server
