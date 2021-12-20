@@ -68,6 +68,9 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
+* Anaconda (Recommended not needed)<br/>
+  https://www.anaconda.com/
+
 * Python
   ```sh
   sudo apt install python3
