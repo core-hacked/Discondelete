@@ -44,7 +44,7 @@ parser.add_argument('-t','--token', dest='token', type=str, help='Token to use w
 parser.add_argument('-p','--prefix', dest='prefix', type=str, help='Prefix to use with message purger')
 parser.add_argument('-s','--serverpurge', dest='serverpurge', type=str, help='Specify a prefix to use for Server Purge')
 parser.add_argument('-b','--heartbeat', dest='heartbeat', type=int, help='Heartbeat timeout to use')
-parser.add_argument('-n','--nooutput', dest='nooutput', type=str, help='Enable console output of deleted messages (Good for debugging)')
+parser.add_argument('-o', '--output', action='store_true', help='Enable console output of deleted messages (Good for debugging)')
 args = parser.parse_args()
 
 # Token
@@ -52,37 +52,27 @@ if args.token is not None:
     token = args.token
 
 # Prefix
-
     if args.prefix is not None:
         prefix = args.prefix
     else:
         prefix = "#DEL"
 
 # Serverpurge prefix
-
     if args.serverpurge is not None:
         serverpurge = args.serverpurge
     else:
         serverpurge = "PS"
 
 # Hearbeat
-
     if args.heartbeat is not None:
         heartbeat = args.heartbeat
     else:
         heartbeat = 86400
 
-# No console output / log
+# output
+    if args.output == True:
+        nooutput = False
 
-    if args.nooutput is not None:
-        if args.nooutput == "f" or "F" or "false" or "False" or "FALSE" or "n" or "N" or "No" or "NO":
-            nooutput = bool(False)
-        elif args.nooutput == "t" or "T" or "true" or "True" or "TRUE" or "y" or "Y" or "Yes" or "YES":
-            nooutput = bool(True)
-        else:
-            nooutput = bool(True)
-    else:
-        nooutput = True
 else:
     token = input("Please input a Token: ")
 # Prefix
@@ -106,20 +96,15 @@ else:
         heartbeat = input("Please input a heartbeat timeout (leave blank for the default 86400): ")
         if heartbeat == "":
             heartbeat = 86400
-# No console output / log
-    if args.nooutput is not None:
-        if args.nooutput == "f" or "F" or "false" or "False" or "FALSE" or "n" or "N" or "No" or "NO":
-            nooutput = bool(False)
-        elif args.nooutput == "t" or "T" or "true" or "True" or "TRUE" or "y" or "Y" or "Yes" or "YES":
-            nooutput = bool(True)
-        else:
-            nooutput = bool(True)
+# output
+    if args.output == True:
+        nooutput = False
     else:
-        nooutputstr = input("Do you want to log deleted messages to console (Y/N): ")
-        if nooutputstr == "n" or "N" or "No" or "NO":
-            nooutput = bool(True)
-        elif nooutputstr == "y" or "Y" or "Yes" or "YES":
-            nooutput = bool(False)
+        nop = input("Do you want to log console output? (Y/N): ")
+        if nop == "" or nop == "n" or nop == "N" or nop == "No" or nop == "NO":
+            nooutput = True
+        elif nop == "y" or nop == "Y" or nop == "Yes" or nop == "YES":
+            nooutput = False
         
 
 # Run the self-bot and await prefix
