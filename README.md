@@ -3,6 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
+[![Latest Stable][releaselateststable-shield]][releaselateststable-url]
 
 
 
@@ -22,14 +23,17 @@
     <a href="https://github.com/core-hacked/Discondelete/issues">Report Bug</a>
     ·
     <a href="https://github.com/core-hacked/Discondelete/issues">Request Feature</a>
+    <br/>
+    <br/>
   </p>
 </p>
 
 
 
 <!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
+
+<details open>
+  <summary><h2>Table of Contents</h2></summary>
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
@@ -56,6 +60,8 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+
+[![Python Tested Version][python397test-shield]][releaselateststable-url]
 
 ### Built With
 
@@ -114,6 +120,7 @@ To get a local copy up and running follow these simple steps.
   # -h or --help | to view this in the terminal/console
   ```
   Then in discord type your prefix or the default ``#DEL`` or ``#PS`` to purge messages from an entire server
+  You can also purge a set of messages in a server by adding a number after your prefix.
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -150,13 +157,16 @@ This repository is distributed under the MIT License. See `LICENSE` for more inf
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/core-hacked/Discondelete.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/core-hacked/Discondelete.svg?colorA=1e1e28&colorB=E38C8F&style=for-the-badge&logo=starship%20style=for-the-badge
 [contributors-url]: https://github.com/core-hacked/Discondelete/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/core-hacked/Discondelete.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/core-hacked/Discondelete.svg?colorA=1e1e28&colorB=A4B9EF&style=for-the-badge&logo=starship%20style=for-the-badge
 [forks-url]: https://github.com/core-hacked/Discondelete/network/members
-[stars-shield]: https://img.shields.io/github/stars/core-hacked/Discondelete.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/core-hacked/Discondelete.svg?colorA=1e1e28&colorB=EBDDAA&style=for-the-badge&logo=starship%20style=for-the-badge
 [stars-url]: https://github.com/core-hacked/Discondelete/stargazers
-[issues-shield]: https://img.shields.io/github/issues/core-hacked/Discondelete.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/core-hacked/Discondelete.svg?colorA=1e1e28&colorB=B1E3AD&style=for-the-badge&logo=starship%20style=for-the-badge
 [issues-url]: https://github.com/core-hacked/Discondelete/issues
-[license-shield]: https://img.shields.io/github/license/core-hacked/Discondelete.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/core-hacked/Discondelete.svg?colorA=1e1e28&colorB=F9C096&style=for-the-badge&logo=starship%20style=for-the-badge
 [license-url]: https://github.com/core-hacked/Discondelete/blob/master/LICENSE
+[python397test-shield]: https://img.shields.io/badge/Python%203.9.7-Working-green?colorA=1e1e28&colorB=B1E3AD&style=for-the-badge&logo=starship%20style=for-the-badge
+[releaselateststable-shield]: https://img.shields.io/badge/Release-Stable%3A%20v1.2.0-blue?colorA=1e1e28&colorB=A4B9EF&style=for-the-badge&logo=starship%20style=for-the-badge
+[releaselateststable-url]: https://github.com/core-hacked/Discondelete/releases/latest
