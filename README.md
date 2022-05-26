@@ -18,7 +18,8 @@
   <h3 align="center">Discondelete</h3>
 
   <p align="center">
-    Discondelete, is a Discord self-bot to delete dm's or purge all messages from a guild.
+    Discondelete, is a Discord self-bot to delete dm's or purge all messages from a guild. <br/>
+    <code>Named by combining the words "discord", "anaconda", and "delete".</code>
     <br />
     <a href="https://github.com/core-hacked/Discondelete/issues">Report Bug</a>
     ·
@@ -66,16 +67,24 @@
 ### Built With
 
 * [Python](https://www.python.org/)
+* [Discord.py](https://github.com/Rapptz/discord.py)
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
 To get a local copy up and running follow these simple steps.
 
-### Prerequisites
+<br/>
 
-* Anaconda (Recommended not needed)<br/>
-  https://www.anaconda.com/
+### Installation on Linux
+
+<!-- Linux / Debian-based install -->
+<details>
+<summary> 
+Debian-based distros (using <code>APT</code>)
+</summary>
+
+### Prerequisites
 
 * Python
   ```sh
@@ -85,6 +94,10 @@ To get a local copy up and running follow these simple steps.
   ```sh
   python3 -m pip install -U discord.py
   ```
+* GIT
+  ```sh
+  sudo apt install git
+  ```
 
 ### Installation
 1. Clone the repo
@@ -93,8 +106,186 @@ To get a local copy up and running follow these simple steps.
    ```
 2. Run the file with python
    ```sh
-   py main.py
+   python3 main.py
    ```
+</details>
+<br/>
+
+<!-- Linux | Fedora/Red Hat (DNF) -->
+<details>
+<summary> 
+Fedora / Red Hat (using <code>DNF</code>)
+</summary>
+
+### Prerequisites
+
+* Python
+  ```sh
+  sudo dnf install python3
+  ```
+* Discord.py
+  ```sh
+  python3 -m pip install -U discord.py
+  ```
+* Git
+  ```sh
+  sudo dnf install git-all
+  ```
+
+### Installation
+1. Clone the repo
+   ```sh
+   git clone https://github.com/core-hacked/Discondelete.git
+   ```
+2. Run the file with python
+   ```sh
+   python3 main.py
+   ```
+</details>
+<br/>
+
+<!-- Linux | Arch (Pacman) -->
+<details>
+<summary> 
+Archlinux (using <code>PacMan</code>)
+</summary>
+
+### Prerequisites
+
+* Python
+  ```sh
+  sudo pacman -S python
+  ```
+* Discord.py
+  ```sh
+  python3 -m pip install -U discord.py
+  ```
+* Git
+  ```sh
+  sudo pacman -S git
+  ```
+
+### Installation
+1. Clone the repo
+   ```sh
+   git clone https://github.com/core-hacked/Discondelete.git
+   ```
+2. Run the file with python
+   ```sh
+   python3 main.py
+   ```
+</details>
+<br/>
+
+### Installation on Windows
+
+<!-- Windows / Installers -->
+<details>
+<summary>
+Windows (using provided installers)
+</summary>
+<br/>
+
+1. Go to [python.org](https://www.python.org/downloads/) and download the latest version of Python (or 3.9.7).
+2. Follow the installation wizard and install Python.
+3. Go to [git-scm.com](https://git-scm.com/download/win), then download the installer (32-bit or 64-bit). 
+4. follow the installation wizard and install Git.
+5. Open command-prompt or PowerShell and install Discord.py using PIP. 
+```bat
+python3 -m pip install -U discord.py
+```
+6. Clone the repo using git.
+```bat
+git clone https://github.com/core-hacked/Discondelete.git
+```
+7. Change directory to the repo and run the file.
+```bat
+cd Discondelete
+python3 main.py
+```
+</details>
+<br/>
+
+<!-- Windows / winget -->
+<details>
+<summary> 
+Windows (using <code>WinGet</code>)
+</summary>
+
+### Prerequisites
+
+* WinGet <br/>
+  https://docs.microsoft.com/en-us/windows/package-manager/winget/
+  <br/>
+
+  > ⚠️ The winget command line tool is only supported on Windows 10 1709 (build 16299) or later at this time.
+* Python
+  ```powershell
+  winget install -e --id Python.Python.3
+  ```
+* Discord.py
+  ```powershell
+  python3 -m pip install -U discord.py
+  ```
+* Git
+  ```powershell
+  winget install -e --id Git.Git
+  ```
+
+### Installation
+1. Clone the repo
+   ```bat
+   git clone https://github.com/core-hacked/Discondelete.git
+   ```
+2. Run the file with python
+   ```bat
+   python3 main.py
+   ```
+</details>
+<br/>
+
+### Installation on MacOS
+
+<!-- MacOS | Brew -->
+<details>
+<summary>
+MacOS (using <code>Brew</code>)
+</summary>
+
+### Prerequisites
+
+* [Brew](https://brew.sh/)
+  ```sh
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  ```
+* Python
+  ```sh
+  brew install python
+  ```
+* Discord.py
+  ```sh
+  python3 -m pip install -U discord.py
+  ```
+* Git
+  ```sh
+  brew install git
+  ```
+
+### Installation
+1. Clone the repo
+   ```sh
+   git clone https://github.com/core-hacked/Discondelete.git
+   ```
+2. Run the file with python
+   ```sh
+   python3 main.py
+   ```
+</details>
+<br/>
+
+> I also highly recommend using [Anaconda](https://www.anaconda.com/)
+
+<br/>
 
 ## Usage
 1. Running the file and passing it a token via the prompt
@@ -168,5 +359,5 @@ This repository is distributed under the MIT License. See `LICENSE` for more inf
 [license-shield]: https://img.shields.io/github/license/core-hacked/Discondelete.svg?colorA=1e1e28&colorB=F9C096&style=for-the-badge&logo=starship%20style=for-the-badge
 [license-url]: https://github.com/core-hacked/Discondelete/blob/master/LICENSE
 [python397test-shield]: https://img.shields.io/badge/Python%203.9.7-Working-green?colorA=1e1e28&colorB=B1E3AD&style=for-the-badge&logo=starship%20style=for-the-badge
-[releaselateststable-shield]: https://img.shields.io/badge/Release-Stable%3A%20v1.2.1-blue?colorA=1e1e28&colorB=A4B9EF&style=for-the-badge&logo=starship%20style=for-the-badge
+[releaselateststable-shield]: https://img.shields.io/badge/Release-Stable%3A%20v1.2.2-blue?colorA=1e1e28&colorB=A4B9EF&style=for-the-badge&logo=starship%20style=for-the-badge
 [releaselateststable-url]: https://github.com/core-hacked/Discondelete/releases/latest
