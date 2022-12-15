@@ -359,5 +359,5 @@ This repository is distributed under the MIT License. See `LICENSE` for more inf
 [license-shield]: https://img.shields.io/github/license/core-hacked/Discondelete.svg?colorA=1e1e28&colorB=F9C096&style=for-the-badge&logo=starship%20style=for-the-badge
 [license-url]: https://github.com/core-hacked/Discondelete/blob/master/LICENSE
 [python397test-shield]: https://img.shields.io/badge/Python%203.9.7-Working-green?colorA=1e1e28&colorB=B1E3AD&style=for-the-badge&logo=starship%20style=for-the-badge
-[releaselateststable-shield]: https://img.shields.io/badge/Release-Stable%3A%20v1.2.2-blue?colorA=1e1e28&colorB=A4B9EF&style=for-the-badge&logo=starship%20style=for-the-badge
+[releaselateststable-shield]: https://img.shields.io/badge/Release-Stable%3A%20v1.2.3-blue?colorA=1e1e28&colorB=A4B9EF&style=for-the-badge&logo=starship%20style=for-the-badge
 [releaselateststable-url]: https://github.com/core-hacked/Discondelete/releases/latest
