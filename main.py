@@ -135,7 +135,7 @@ else:
             nooutput = False
     print("\nTo delete all messages in one channel, type: " + prefix + " in Discord, \nor delete a set amount of messages by adding a number after the prefix\n")
     print("To delete all messages from the server type: " + serverpurge + " in Discord.")
-    if sys.platform() == "Darwin" or sys.platform() == "darwin":
+    if sys.platform == "Darwin" or sys.platform == "darwin":
         print("\nTo stop the program, press " + u"\u2318" + " + C in the console.")
     else:
         print("\nTo stop the program, press CTRL + C in the console.")
