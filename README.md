@@ -1,3 +1,5 @@
+# https://github.com/core-hacked/Discondelete/issues/6 <- READ THIS
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
