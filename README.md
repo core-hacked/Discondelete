@@ -1,5 +1,3 @@
-# https://github.com/core-hacked/Discondelete/issues/6 <- READ THIS
-
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -69,7 +67,7 @@
 ### Built With
 
 * [Python](https://www.python.org/)
-* [Discord.py](https://github.com/Rapptz/discord.py)
+* [Discord.py-self](https://github.com/dolfies/discord.py-self)
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -127,7 +125,7 @@ Fedora / Red Hat (using <code>DNF</code>)
   ```
 * Discord.py
   ```sh
-  python3 -m pip install -U discord.py
+  python3 -m pip install -U discord.py-self
   ```
 * Git
   ```sh
@@ -160,7 +158,7 @@ Archlinux (using <code>PacMan</code>)
   ```
 * Discord.py
   ```sh
-  python3 -m pip install -U discord.py
+  python3 -m pip install -U discord.py-self
   ```
 * Git
   ```sh
@@ -194,7 +192,7 @@ Windows (using provided installers)
 4. follow the installation wizard and install Git.
 5. Open command-prompt or PowerShell and install Discord.py using PIP. 
 ```bat
-python3 -m pip install -U discord.py
+python3 -m pip install -U discord.py-self
 ```
 6. Clone the repo using git.
 ```bat
@@ -227,7 +225,7 @@ Windows (using <code>WinGet</code>)
   ```
 * Discord.py
   ```powershell
-  python3 -m pip install -U discord.py
+  python3 -m pip install -U discord.py-self
   ```
 * Git
   ```powershell
@@ -266,7 +264,7 @@ MacOS (using <code>Brew</code>)
   ```
 * Discord.py
   ```sh
-  python3 -m pip install -U discord.py
+  python3 -m pip install -U discord.py-self
   ```
 * Git
   ```sh
