@@ -143,4 +143,4 @@ else:
 # Run the self-bot and await prefix
 
 client=MyClient(heartbeat_timeout=heartbeat, guild_subscriptions=False)
-client.run(token, bot=False)
+client.run(token)
