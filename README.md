@@ -67,7 +67,7 @@
 ### Built With
 
 * [Python](https://www.python.org/)
-* [Discord.py](https://github.com/Rapptz/discord.py)
+* [Discord.py-self](https://github.com/dolfies/discord.py-self)
 
 <!-- GETTING STARTED -->
 ## Getting Started
