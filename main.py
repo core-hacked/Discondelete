@@ -9,7 +9,7 @@ prefix = str("#DEL")
 token = str("")
 heartbeat = int(86400)
 serverpurge =str("#PS") 
-nooutput = bool(True)
+nooutput = bool(True)   
 MessagesToDEL = int()
 counter = int(0)
 
@@ -21,6 +21,7 @@ class MyClient(discord.Client):
         if(message.author!=self.user):
             return
         channels=[]
+        containsnumbers = False
         if(message.content==serverpurge):
             channels=message.channel.guild.channels
         elif(prefix in message.content): # check if the prefix is present in the message
@@ -47,7 +48,7 @@ class MyClient(discord.Client):
                                 if nooutput==False:
                                     print("Can't delete!\n") # this shouldn't happen unless you call purge multiple time
                 except:
-                    if args.nooutput==False:
+                    if args.output==False:
                         print("Can't read history!\n")   
             else:
                 try:
@@ -62,7 +63,7 @@ class MyClient(discord.Client):
                                 if nooutput==False:
                                     print("Can't delete!\n") # this shouldn't happen unless you call purge multiple time
                 except:
-                    if args.nooutput==False:
+                    if args.output==False:
                         print("Can't read history!\n")     
 
 # Create arguments
@@ -142,5 +143,5 @@ else:
 
 # Run the self-bot and await prefix
 
-client=MyClient(heartbeat_timeout=heartbeat, guild_subscriptions=False)
+client = MyClient(heartbeat_timeout=heartbeat, guild_subscriptions=False)
 client.run(token)
